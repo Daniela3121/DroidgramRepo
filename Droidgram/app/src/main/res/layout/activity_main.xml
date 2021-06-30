@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6DCDC"
+    tools:context=".MainActivity">
+
+    <!--        <Button-->
+    <!--        android:id="@+id/dislike"-->
+    <!--        android:layout_width="76dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_marginStart="212dp"-->
+    <!--        android:layout_marginBottom="192dp"-->
+    <!--        android:text="💔"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+
+    <ImageView
+        android:id="@+id/postHolder"
+        android:layout_width="394dp"
+        android:layout_height="344dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars[12]" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="344dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/commentSection"
+                android:layout_width="344dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="36dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/captionHolder"
+        android:layout_width="201dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="128dp"
+        android:ems="10"
+        android:hint="Enter Message"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/likes"
+        android:layout_width="148dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="164dp"
+        android:text="    "
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/like" />
+
+    <Button
+        android:id="@+id/like"
+        android:layout_width="103dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="164dp"
+        android:background="@android:color/transparent"
+        android:text="❤"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sendmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="124dp"
+        android:background="@android:color/transparent"
+        android:text="🚀"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/captionHolder" />
+
+    <Button
+        android:id="@+id/nextPost"
+        android:layout_width="85dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="40dp"
+        android:text="Next"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/namethingy"
+        android:layout_width="268dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="72dp"
+        android:text="      Utensils lover's page"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
